@@ -27,7 +27,7 @@ eval "$(conda shell.bash hook)"
 conda activate ds2
 
 python -u evaluate_experiment.py \
---object_name "juice_bottle" \
+--object_name "result_juice_bottle" \
 --dataset_base_dir "mvtec_loco_ad" \
 --anomaly_maps_dir "mvtec_loco_anomaly_maps" \
 --output_dir "juice_bottle_first_trial" \
