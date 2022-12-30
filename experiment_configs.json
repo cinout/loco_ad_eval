@@ -1,10 +1,6 @@
 {
   "exp_base_dir": "mvtec_loco_anomaly_maps",
   "anomaly_maps_dirs": {
-    "breakfast_box": "",
-    "juice_bottle": "",
-    "pushpins": "",
-    "screw_bag": "",
-    "splicing_connectors": ""
+    "results_for_all_categories": ""
   }
 }
