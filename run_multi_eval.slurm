@@ -1,9 +1,11 @@
 #!/bin/bash
 
+#SBATCH --partition=physical
+
 ###SBATCH --partition=gpu-a100
 
-#SBATCH --partition=deeplearn
-#SBATCH --qos=gpgpudeeplearn
+###SBATCH --partition=deeplearn
+###SBATCH --qos=gpgpudeeplearn
 ###SBATCH --constraint=dlg1
 
 #SBATCH --job-name="loco_eval"
@@ -12,7 +14,7 @@
 
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --gres=gpu:1
+###SBATCH --gres=gpu:1
 ###### "ntasks-per-node" should have same value as "res=gpu:"
 
 #SBATCH --cpus-per-task=1
