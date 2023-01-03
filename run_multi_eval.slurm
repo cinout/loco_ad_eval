@@ -2,20 +2,12 @@
 
 #SBATCH --partition=physical
 
-###SBATCH --partition=gpu-a100
-
-###SBATCH --partition=deeplearn
-###SBATCH --qos=gpgpudeeplearn
-###SBATCH --constraint=dlg1
-
 #SBATCH --job-name="loco_eval"
 #SBATCH --account=punim1623
 #SBATCH --time=0-02:00:00
 
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-###SBATCH --gres=gpu:1
-###### "ntasks-per-node" should have same value as "res=gpu:"
 
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=40G
