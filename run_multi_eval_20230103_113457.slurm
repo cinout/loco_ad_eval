@@ -20,6 +20,8 @@ module purge
 eval "$(conda shell.bash hook)"
 conda activate ds2
 
+ln -s /data/gpfs/projects/punim1623/RevDis/mvtec_loco_anomaly_maps_20230103_113457 ./mvtec_loco_anomaly_maps_20230103_113457
+
 python -u evaluate_multiple_experiments.py \
 --dataset_base_dir "mvtec_loco_ad" \
 --experiment_configs "experiment_configs_20230103_113457.json" \
