@@ -20,12 +20,14 @@ module purge
 eval "$(conda shell.bash hook)"
 conda activate ds2
 
-ln -s /data/gpfs/projects/punim1623/RevDis/mvtec_loco_anomaly_maps_20230103_113457 ./mvtec_loco_anomaly_maps_20230103_113457
+timestamp="20230103_113457"
+
+ln -s /data/gpfs/projects/punim1623/RevDis/mvtec_loco_anomaly_maps_${timestamp} ./mvtec_loco_anomaly_maps_${timestamp}
 
 python -u evaluate_multiple_experiments.py \
 --dataset_base_dir "mvtec_loco_ad" \
---experiment_configs "experiment_configs_20230103_113457.json" \
---output_dir "multi_experiments_results_20230103_113457" \
+--experiment_configs "experiment_configs_${timestamp}.json" \
+--output_dir "multi_experiments_results_${timestamp}" \
 
 
 ##Log this job's resource usage stats###
