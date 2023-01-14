@@ -21,10 +21,10 @@ eval "$(conda shell.bash hook)"
 conda activate ds2
 
 python -u evaluate_experiment.py \
---object_name "result_juice_bottle" \
+--object_name "breakfast_box" \
 --dataset_base_dir "mvtec_loco_ad" \
---anomaly_maps_dir "mvtec_loco_anomaly_maps" \
---output_dir "juice_bottle_first_trial" \
+--anomaly_maps_dir "mvtec_loco_anomaly_maps_20230114_205638" \
+--output_dir "breakfast_box_with_transformer" \
 
 
 ##Log this job's resource usage stats###
