@@ -20,7 +20,7 @@ module purge
 eval "$(conda shell.bash hook)"
 conda activate ds2
 
-timestamp="20230103_113828"
+timestamp="20230114_205638"
 
 ln -s /data/gpfs/projects/punim1623/RevDis/mvtec_loco_anomaly_maps_${timestamp} ./mvtec_loco_anomaly_maps_${timestamp}
 
